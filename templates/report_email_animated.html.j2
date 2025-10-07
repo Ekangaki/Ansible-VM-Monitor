@@ -112,7 +112,7 @@
   </style>
 </head>
 <body>
-  <h2>📊 Consolidated VM Health Report</h2>
+  <h2>📊 Afro IT Solutions (AIT)Consolidated VM Health Report</h2>
 
   <div class="summary">
     📅 <b>{{ collected_metrics | length }} VMs</b> | 🔥 Avg CPU: {{ ((collected_metrics | map(attribute='cpu') | map('float') | sum | float) / (collected_metrics | length)) | round(2) }}% | 📥 Avg Mem: {{ ((collected_metrics | map(attribute='mem') | map('float') | sum | float) / (collected_metrics | length)) | round(2) }}% | 📦 Avg Disk: {{ ((collected_metrics | map(attribute='disk') | map('float') | sum | float) / (collected_metrics | length)) | round(2) }}%
