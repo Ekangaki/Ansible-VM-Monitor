@@ -17,7 +17,7 @@ email_user: "georgegedeon2012@gmail.com"
 
 # The password or, more securely, an **Application-Specific Password** (if using services like Gmail).
 # NOTE: This sensitive variable should typically be stored in **Ansible Vault**.
-email_pass: "1234 unro 5432 kxkg"
+email_pass: ""
 
 # -- Recipient -----------------------------------------------------------------
 # The email address that will receive the notifications or alerts sent by Ansible.
