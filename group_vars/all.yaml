@@ -1,6 +1,24 @@
-smtp_server: "smtp.gmail.com"
-smtp_port: 587
-email_user: "--"
-email_pass: "--"
-alert_recipient: "--"
+---
+# ==============================================================================
+# Email Configuration Variables (Used for Sending Alerts or Notifications)
+# ==============================================================================
 
+# -- SMTP Server Settings ------------------------------------------------------
+# The address of the outgoing mail server (e.g., Google, Outlook).
+smtp_server: "smtp.gmail.com"
+
+# The standard port for secure (TLS/STARTTLS) email submission.
+# Common ports are 587 (TLS/STARTTLS) or 465 (SSL).
+smtp_port: 587
+
+# -- Credentials ---------------------------------------------------------------
+# The username (full email address) used to log into the SMTP server.
+email_user: "georgegedeon2012@gmail.com"
+
+# The password or, more securely, an **Application-Specific Password** (if using services like Gmail).
+# NOTE: This sensitive variable should typically be stored in **Ansible Vault**.
+email_pass: "1234 unro 5432 kxkg"
+
+# -- Recipient -----------------------------------------------------------------
+# The email address that will receive the notifications or alerts sent by Ansible.
+alert_recipient: "njangekangaki@gmail.com"
